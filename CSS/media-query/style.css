@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing {
+  background-image: url("./assets/img-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.landing-title {
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.landing-title strong {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.landing-link {
+  line-height: 1;
+  color: #fff;
+}
+
+.banner-title a {
+  color: #1f2d3d;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+.landing {
+  height: 100vh;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.landing-title {
+  text-align: right;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.landing-link {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  padding: 14px 37px;
+  font-size: 15px;
+}
+
+.banner {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #ffc82c;
+  width: 100%;
+}
+
+.banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .landing {
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .landing-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  .landing-link {
+    font-size: 18px;
+    padding: 16px 38px;
+  }
+
+  .banner {
+    bottom: auto;
+    top: 0;
+  }
+
+  .banner a {
+    height: 80px;
+  }
+}
