@@ -1,0 +1,138 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 840px;
+}
+
+.card-image {
+  position: relative;
+  background-image: url("./assets/img-house.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 200px;
+  margin-right: 24px;
+}
+
+.card-image button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  background-image: url(./assets/icon-favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property-type {
+  display: flex;
+  justify-content: center;
+}
+
+.plus-badge {
+  padding: 1px 8px;
+  background-color: #92174d;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.property-type span {
+  color: #7d858f;
+  font-size: 16px;
+}
+
+.property-rate {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-rate strong {
+  color: #151b26;
+  margin-right: 1px;
+}
+
+.property-rate span {
+  color: #7d858f;
+}
+
+.property-rate::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(./assets/icon-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-right: 4px;
+}
+
+.card-header {
+  margin-bottom: 9px;
+}
+
+.card-title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.sr-only {
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.property-detail dd {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7d858f;
+}
+
+.property-detail dd span::after {
+  content: " \00B7";
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+}
