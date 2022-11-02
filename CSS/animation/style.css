@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.loading {
+  padding: 80px 100px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes flick {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #151b26;
+
+  animation-name: flick;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e5eaef;
+  border-radius: 100px;
+}
+
+@keyframes gauge {
+  0% {
+    width: 0;
+  }
+
+  /* 33.33% {
+    width: 10%;
+  }
+
+  66.66% {
+    width: 30%;
+  } */
+
+  100% {
+    width: 100%;
+  }
+}
+
+.progress-bar-gauge {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #13ce66;
+
+  animation-name: gauge;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+}
